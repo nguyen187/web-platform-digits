@@ -54,10 +54,10 @@ def uploadInfo():
         ProID = request.form['ProID']
         BatchID = request.form['BatchID']
         Operator = request.form['Operator']
-        Pilot = request.form['Pilot']
-        AAA = request.form['AAA']
-        BBB = request.form['BBB']
-        CCC = request.form['CCC']
+        # Pilot = request.form['Pilot']
+        # AAA = request.form['AAA']
+        # BBB = request.form['BBB']
+        # CCC = request.form['CCC']
         
         
         print(CusID,ProID,BatchID,Operator,Pilot,AAA,BBB,CCC)
@@ -79,19 +79,19 @@ def uploadInfo():
         df_pro_ID = np.full((df_operation.shape[0], 1), ProID)
         df_batch_ID = np.full((df_operation.shape[0], 1), BatchID)
         df_operator = np.full((df_operation.shape[0], 1), Operator) # create a dataframe with 1 column and value = self.cus_ID
-        df_pilot = np.full((df_operation.shape[0], 1), Pilot)
-        df_aaa = np.full((df_operation.shape[0], 1), AAA)
-        df_bbb = np.full((df_operation.shape[0], 1), BBB)
-        df_ccc = np.full((df_operation.shape[0], 1), CCC)
+        # df_pilot = np.full((df_operation.shape[0], 1), Pilot)
+        # df_aaa = np.full((df_operation.shape[0], 1), AAA)
+        # df_bbb = np.full((df_operation.shape[0], 1), BBB)
+        # df_ccc = np.full((df_operation.shape[0], 1), CCC)
         
         
         df_operation_full = pd.concat([pd.DataFrame(df_cus_ID, columns=['Cust']), pd.DataFrame(df_pro_ID, columns=['Project_ID']),
                                        pd.DataFrame(df_batch_ID, columns=['BatchID']),
                                         pd.DataFrame(df_operator, columns=['Operator']),
-                                        pd.DataFrame(df_pilot, columns=['Pilot']),
-                                        pd.DataFrame(df_aaa, columns=['AAA']),
-                                        pd.DataFrame(df_bbb, columns=['BBB']),
-                                        pd.DataFrame(df_ccc, columns=['CCC']),
+                                        # pd.DataFrame(df_pilot, columns=['Pilot']),
+                                        # pd.DataFrame(df_aaa, columns=['AAA']),
+                                        # pd.DataFrame(df_bbb, columns=['BBB']),
+                                        # pd.DataFrame(df_ccc, columns=['CCC']),
                                         
                                         df_operation], axis=1)
         #df_raman_full = pd.concat([pd.DataFrame(df_cus_ID, columns=['Cust']), pd.DataFrame(df_pro_ID, columns=['Project_ID']), pd.DataFrame(df_batch_ID, columns=['BatchID']),
