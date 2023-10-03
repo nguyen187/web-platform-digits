@@ -60,7 +60,7 @@ def uploadInfo():
         # CCC = request.form['CCC']
         
         
-        print(CusID,ProID,BatchID,Operator,Pilot,AAA,BBB,CCC)
+        # print(CusID,ProID,BatchID,Operator,Pilot,AAA,BBB,CCC)
         filename_raman = secure_filename(uploaded_file_raman.filename)
         filename_operation = secure_filename(uploaded_file_operation.filename)
 
