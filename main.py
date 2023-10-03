@@ -87,7 +87,7 @@ def uploadInfo():
         
         df_operation_full = pd.concat([pd.DataFrame(df_cus_ID, columns=['Cust']), pd.DataFrame(df_pro_ID, columns=['Project_ID']),
                                        pd.DataFrame(df_batch_ID, columns=['BatchID']),
-                                        pd.DataFrame(df_operator, columns=['Operator']),
+                                        #pd.DataFrame(df_operator, columns=['Operator']),
                                         # pd.DataFrame(df_pilot, columns=['Pilot']),
                                         # pd.DataFrame(df_aaa, columns=['AAA']),
                                         # pd.DataFrame(df_bbb, columns=['BBB']),
